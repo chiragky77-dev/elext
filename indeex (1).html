@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ELECTRA — Election Awareness</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">E</span>
+            <span>ELECTRA</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#elections">Elections</a>
+            <a href="#learn">Learn</a>
+            <a href="#simulator">Simulator</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#simulator" class="nav-button">
+            Try Simulator
+        </a>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#elections">Elections</a>
+    <a href="#learn">Learn</a>
+    <a href="#simulator">Simulator</a>
+    <a href="#about">About</a>
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <span></span>
+            Civic Awareness Platform
+        </div>
+
+        <h1>
+            Understand.<br>
+            <span>Participate.</span><br>
+            Be Informed.
+        </h1>
+
+        <p>
+            A simple and interactive platform to help citizens
+            understand elections, voting, civic rights and
+            reliable election information.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#elections" class="primary-button">
+                Explore Elections
+                <span>→</span>
+            </a>
+
+            <a href="#simulator" class="secondary-button">
+                Try Voting Simulator
+            </a>
+        </div>
+
+        <div class="hero-note">
+            <span>✓</span>
+            Educational • Neutral • Easy to understand
+        </div>
+
+    </div>
+
+    <div class="hero-visual">
+
+        <div class="visual-card">
+
+            <div class="visual-header">
+                <span>Practice Election</span>
+                <span class="live-dot">●</span>
+            </div>
+
+            <div class="visual-question">
+                Choose one option
+            </div>
+
+            <div class="candidate-mini selected">
+                <span class="radio checked"></span>
+                <div>
+                    <strong>Candidate A</strong>
+                    <small>Practice candidate</small>
+                </div>
+                <span>✓</span>
+            </div>
+
+            <div class="candidate-mini">
+                <span class="radio"></span>
+                <div>
+                    <strong>Candidate B</strong>
+                    <small>Practice candidate</small>
+                </div>
+            </div>
+
+            <div class="candidate-mini">
+                <span class="radio"></span>
+                <div>
+                    <strong>Candidate C</strong>
+                    <small>Practice candidate</small>
+                </div>
+            </div>
+
+            <button class="visual-button">
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK FEATURES -->
+<section class="features">
+
+    <div class="feature-card">
+        <div class="feature-icon">🗳️</div>
+        <h3>Explore Elections</h3>
+        <p>Understand election processes and important information.</p>
+    </div>
+
+    <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>Learn Voting</h3>
+        <p>Learn how registration, EVMs and VVPAT work.</p>
+    </div>
+
+    <div class="feature-card">
+        <div class="feature-icon">🔎</div>
+        <h3>Verify Information</h3>
+        <p>Learn how to evaluate election-related claims.</p>
+    </div>
+
+    <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h3>Know Your Rights</h3>
+        <p>Understand basic voter rights and responsibilities.</p>
+    </div>
+
+</section>
+
+
+<!-- ELECTIONS -->
+<section class="section" id="elections">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="eyebrow">EXPLORE</span>
+
+            <h2>Understand Elections</h2>
+
+            <p>
+                Learn the basics without complicated political jargon.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="election-grid">
+
+        <article class="info-card large-card">
+
+            <span class="card-number">01</span>
+
+            <div class="card-icon">🗳️</div>
+
+            <h3>How Elections Work</h3>
+
+            <p>
+                Understand the basic stages of an election,
+                from voter registration to results.
+            </p>
+
+            <button onclick="showInfo('election')">
+                Learn more →
+            </button>
+
+        </article>
+
+
+        <article class="info-card">
+
+            <span class="card-number">02</span>
+
+            <div class="card-icon">👤</div>
+
+            <h3>Voter Eligibility</h3>
+
+            <p>
+                Learn about general voter eligibility
+                and registration concepts.
+            </p>
+
+            <button onclick="showInfo('eligibility')">
+                Learn more →
+            </button>
+
+        </article>
+
+
+        <article class="info-card">
+
+            <span class="card-number">03</span>
+
+            <div class="card-icon">📋</div>
+
+            <h3>Voting Process</h3>
+
+            <p>
+                Explore what typically happens when
+                a voter visits a polling station.
+            </p>
+
+            <button onclick="showInfo('process')">
+                Learn more →
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- LEARN -->
+<section class="section light-section" id="learn">
+
+    <div class="section-heading center">
+
+        <span class="eyebrow">LEARN</span>
+
+        <h2>Voting Made Simple</h2>
+
+        <p>
+            Six simple concepts every voter can understand.
+        </p>
+
+    </div>
+
+
+    <div class="learning-grid">
+
+        <div class="learning-card">
+            <span>01</span>
+            <div>
+                <h3>Eligibility</h3>
+                <p>Understand who can participate in elections.</p>
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <span>02</span>
+            <div>
+                <h3>Registration</h3>
+                <p>Learn why voter registration matters.</p>
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <span>03</span>
+            <div>
+                <h3>Polling Station</h3>
+                <p>Understand what happens at a polling location.</p>
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <span>04</span>
+            <div>
+                <h3>EVM</h3>
+                <p>Learn about electronic voting machines.</p>
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <span>05</span>
+            <div>
+                <h3>VVPAT</h3>
+                <p>Understand the paper verification process.</p>
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <span>06</span>
+            <div>
+                <h3>Results</h3>
+                <p>Learn how votes are counted and results announced.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SIMULATOR -->
+<section class="simulator-section" id="simulator">
+
+    <div class="simulator-wrapper">
+
+        <div class="section-heading center">
+
+            <span class="eyebrow">INTERACTIVE</span>
+
+            <h2>Voting Simulator</h2>
+
+            <p>
+                Experience a fictional voting process in a safe
+                educational environment.
+            </p>
+
+        </div>
+
+
+        <!-- STEP INDICATOR -->
+
+        <div class="steps">
+
+            <div class="step active" id="stepIndicator1">
+                <span>1</span>
+                Select
+            </div>
+
+            <div class="step-line"></div>
+
+            <div class="step" id="stepIndicator2">
+                <span>2</span>
+                Review
+            </div>
+
+            <div class="step-line"></div>
+
+            <div class="step" id="stepIndicator3">
+                <span>3</span>
+                Confirm
+            </div>
+
+            <div class="step-line"></div>
+
+            <div class="step" id="stepIndicator4">
+                <span>4</span>
+                Results
+            </div>
+
+        </div>
+
+
+        <!-- SIMULATOR CARD -->
+
+        <div class="simulator-card">
+
+            <!-- STEP 1 -->
+
+            <div class="sim-step active" id="simStep1">
+
+                <div class="simulation-warning">
+                    ⚠️ <strong>Educational simulation</strong>
+                    — No real vote will be cast.
+                </div>
+
+                <h3>Practice Election</h3>
+
+                <p class="sim-description">
+                    Choose one fictional candidate to continue.
+                </p>
+
+
+                <div class="candidate-list">
+
+                    <button class="candidate-option"
+                            data-candidate="Candidate A">
+
+                        <span class="radio"></span>
+
+                        <div class="candidate-info">
+                            <strong>Candidate A</strong>
+                            <small>Fictional practice candidate</small>
+                        </div>
+
+                        <span class="candidate-arrow">→</span>
+
+                    </button>
+
+
+                    <button class="candidate-option"
+                            data-candidate="Candidate B">
+
+                        <span class="radio"></span>
+
+                        <div class="candidate-info">
+                            <strong>Candidate B</strong>
+                            <small>Fictional practice candidate</small>
+                        </div>
+
+                        <span class="candidate-arrow">→</span>
+
+                    </button>
+
+
+                    <button class="candidate-option"
+                            data-candidate="Candidate C">
+
+                        <span class="radio"></span>
+
+                        <div class="candidate-info">
+                            <strong>Candidate C</strong>
+                            <small>Fictional practice candidate</small>
+                        </div>
+
+                        <span class="candidate-arrow">→</span>
+
+                    </button>
+
+
+                    <button class="candidate-option"
+                            data-candidate="NOTA">
+
+                        <span class="radio"></span>
+
+                        <div class="candidate-info">
+                            <strong>NOTA</strong>
+                            <small>None of the above</small>
+                        </div>
+
+                        <span class="candidate-arrow">→</span>
+
+                    </button>
+
+                </div>
+
+
+                <button class="primary-button full-button"
+                        id="continueButton"
+                        disabled>
+
+                    Continue →
+
+                </button>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="sim-step" id="simStep2">
+
+                <div class="review-icon">
+                    ✓
+                </div>
+
+                <h3>Review Your Selection</h3>
+
+                <p class="sim-description">
+                    Check your selection before confirming.
+                </p>
+
+                <div class="selected-review">
+
+                    <span>Your selection</span>
+
+                    <strong id="selectedCandidate">
+                        Candidate A
+                    </strong>
+
+                </div>
+
+                <div class="review-buttons">
+
+                    <button class="secondary-button"
+                            onclick="goToStep(1)">
+                        ← Change Selection
+                    </button>
+
+                    <button class="primary-button"
+                            onclick="goToStep(3)">
+                        Confirm →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="sim-step" id="simStep3">
+
+                <div class="evm-machine">
+
+                    <div class="evm-top">
+                        PRACTICE EVM
+                    </div>
+
+                    <div class="evm-screen">
+
+                        <span>Selected option</span>
+
+                        <strong id="evmCandidate">
+                            Candidate A
+                        </strong>
+
+                    </div>
+
+                    <div class="evm-button-area">
+
+                        <div class="evm-light"></div>
+
+                        <button onclick="confirmVote()">
+                            VOTE
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <p class="evm-note">
+                    This is a visual simulation of a voting machine.
+                    It does not connect to any election system.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 4 -->
+
+            <div class="sim-step" id="simStep4">
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <h3>Vote Simulated</h3>
+
+                <p class="sim-description">
+                    Your practice vote has been recorded.
+                </p>
+
+
+                <!-- VVPAT -->
+
+                <div class="vvpat">
+
+                    <div class="vvpat-header">
+                        VVPAT — PRACTICE
+                    </div>
+
+                    <div class="vvpat-paper">
+
+                        <span>Selected</span>
+
+                        <strong id="vvpatCandidate">
+                            Candidate A
+                        </strong>
+
+                        <div class="vvpat-check">
+                            ✓
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="demo-id">
+                    Demo Vote ID:
+                    <strong id="voteId">DEMO-00000</strong>
+                </div>
+
+
+                <div class="results-box">
+
+                    <h3>Practice Results</h3>
+
+                    <div class="result-row">
+                        <span>Candidate A</span>
+                        <div class="result-bar">
+                            <div style="width:42%"></div>
+                        </div>
+                        <strong>42%</strong>
+                    </div>
+
+                    <div class="result-row">
+                        <span>Candidate B</span>
+                        <div class="result-bar">
+                            <div style="width:31%"></div>
+                        </div>
+                        <strong>31%</strong>
+                    </div>
+
+                    <div class="result-row">
+                        <span>Candidate C</span>
+                        <div class="result-bar">
+                            <div style="width:20%"></div>
+                        </div>
+                        <strong>20%</strong>
+                    </div>
+
+                    <div class="result-row">
+                        <span>NOTA</span>
+                        <div class="result-bar">
+                            <div style="width:7%"></div>
+                        </div>
+                        <strong>7%</strong>
+                    </div>
+
+                </div>
+
+
+                <p class="simulation-footer">
+                    These are fictional simulation results and have
+                    no connection to any real election.
+                </p>
+
+
+                <button class="primary-button full-button"
+                        onclick="resetSimulator()">
+
+                    Try Again
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FACT CHECK -->
+<section class="section" id="facts">
+
+    <div class="fact-layout">
+
+        <div>
+
+            <span class="eyebrow">INFORMATION AWARENESS</span>
+
+            <h2>
+                Pause.<br>
+                Check.<br>
+                Understand.
+            </h2>
+
+            <p>
+                Election information can spread quickly online.
+                Learn to check claims before accepting or sharing them.
+            </p>
+
+        </div>
+
+
+        <div class="fact-card">
+
+            <div class="fact-label">
+                🔎 INFORMATION CHECK
+            </div>
+
+            <h3>
+                What should you check?
+            </h3>
+
+            <div class="check-item">
+                <span>✓</span>
+                <p>Who published the information?</p>
+            </div>
+
+            <div class="check-item">
+                <span>✓</span>
+                <p>Is there a primary or official source?</p>
+            </div>
+
+            <div class="check-item">
+                <span>✓</span>
+                <p>Is the information current?</p>
+            </div>
+
+            <div class="check-item">
+                <span>✓</span>
+                <p>Can the claim be independently verified?</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+
+    <div class="about-content">
+
+        <span class="eyebrow">ABOUT ELECTRA</span>
+
+        <h2>
+            Technology for<br>
+            better civic awareness.
+        </h2>
+
+        <p>
+            ELECTRA is an educational prototype designed to make
+            election information easier to understand through
+            simple explanations and interactive learning.
+        </p>
+
+        <div class="about-points">
+
+            <div>
+                <strong>01</strong>
+                <span>Neutral information</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <span>Simple explanations</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>Interactive learning</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-content">
+
+        <div class="logo">
+            <span class="logo-mark">E</span>
+            ELECTRA
+        </div>
+
+        <p>
+            Election awareness • Civic education • Interactive learning
+        </p>
+
+        <span>
+            © 2026 ELECTRA
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- INFO MODAL -->
+
+<div class="modal" id="infoModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close"
+                onclick="closeModal()">
+            ×
+        </button>
+
+        <span class="eyebrow">LEARN</span>
+
+        <h2 id="modalTitle">
+            Election Information
+        </h2>
+
+        <p id="modalText">
+            Information goes here.
+        </p>
+
+        <button class="primary-button"
+                onclick="closeModal()">
+
+            Got it
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
